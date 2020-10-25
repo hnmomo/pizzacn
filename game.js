@@ -171,7 +171,7 @@ function torpedo() {
     var hit = Math.random();
     var crit = Math.random();
     if (hit > hitchance) {
-        message("鱼类<b>未命中</b>.");
+        message("光子鱼雷<b>未命中</b>.");
         return false;
     }
     var dmg = mult * player.dmgmult * player.torpedo;
@@ -179,7 +179,7 @@ function torpedo() {
         dmg *= 2;
     }
     enemy.health -= dmg;
-    message("鱼雷命中并对披萨造成<b>" + dmg.toFixed(0) + "</b>伤害。");
+    message("光子鱼雷命中并对披萨造成<b>" + dmg.toFixed(0) + "</b>伤害。");
 }
 
 function updatestat(){
